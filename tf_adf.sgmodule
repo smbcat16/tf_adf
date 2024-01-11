@@ -4,7 +4,7 @@
 
 [Script]
 //access_to_information = type=http-request,pattern=^https:\/\/testflight\.apple\.com\/v3\/accounts/.*\/apps$,requires-body=0,script-path=https://raw.githubusercontent.com/BaDucPham/tf_adf/master/TF_keys.js
-join_the_test = type=cron,cronexp="*/10 * * * * *",script-path=https://raw.githubusercontent.com/githubdulong/Script/master/Auto_join_TF.js,wake-system=0,timeout=180
+join_the_test = type=cron,cronexp="*/10 * * * * *",script-path=https://raw.githubusercontent.com/BaDucPham/tf_adf/master/auto_tf.js,wake-system=0,timeout=180
 
 [MITM]
 hostname = %APPEND% testflight.apple.com
